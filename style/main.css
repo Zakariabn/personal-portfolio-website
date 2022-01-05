@@ -68,6 +68,11 @@ body {
     text-orientation: upright;
     justify-self: center;
     letter-spacing: -5px;
+    animation-name: scroll-effect;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
 }
 
 /* .hero .title .color-a {
