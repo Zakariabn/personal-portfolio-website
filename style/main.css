@@ -14,6 +14,7 @@
     /* font  */
     --htmlTag-font: 'Island Moments', cursive;
     --title-font: ;
+    --button-font: cursive;
     --main-font: 'Source Code Pro', monospace;
 }
 html {
@@ -53,10 +54,22 @@ body {
     color: var(--dark-navyblue);
     filter: drop-shadow( 2px 2px var(--bright-orange));
 }
+.shortcut {
+    display: flex;
+    width: inherit;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+}
 .scroll-shortcut {
     font-size: 13px;
-    font-weight: bold;
+    text-orientation: vertical-rl;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    justify-self: center;
+    letter-spacing: -5px;
 }
+
 /* .hero .title .color-a {
     filter: drop-shadow( 2px 2px var(--bright-orange));
 } */
@@ -65,7 +78,7 @@ body {
 .btn {
     background: var(--bright-orange);
     border: none;
-    font-family: var(--htmlTag-font);
+    font-family: var(--button-font);
     font-weight: bolder;
     font-size: 1rem;
 }
