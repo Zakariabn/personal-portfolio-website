@@ -12,4 +12,74 @@
     --neutral-color: #B1D0E0;
 
     /* font  */
+    --htmlTag-font: 'Island Moments', cursive;
+    --title-font: ;
+    --main-font: 'Source Code Pro', monospace;
+}
+html {
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--dark-navyblue);
+}
+
+/* hero section start frome hear */
+.hero {
+    font-family: var(--main-font);
+    color: var(--light-blue);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .title {
+    font-size: 2rem;
+    text-align: center;
+}
+.hero .title .color-coma {
+    color: var(--bright-orange);
+}
+.hero .title .name-style {
+    color: var(--dark-navyblue);
+    filter: drop-shadow( 2px 2px var(--bright-orange));
+}
+.scroll-shortcut {
+    font-size: 13px;
+    font-weight: bold;
+}
+/* .hero .title .color-a {
+    filter: drop-shadow( 2px 2px var(--bright-orange));
+} */
+
+/* ......button style */
+.btn {
+    background: var(--bright-orange);
+    border: none;
+    font-family: var(--htmlTag-font);
+    font-weight: bolder;
+    font-size: 1rem;
+}
+.btn:hover {
+    cursor: pointer;
+}
+
+.hair-btn {
+    padding: .3rem 1rem;
+    border-radius: calc(1rem - 4px);
+    color: var(--dark-navyblue);   
+    transition: all .1s ease-in-out;  
+}
+.hair-btn:hover {
+    color: var(--blue);
+
 }
